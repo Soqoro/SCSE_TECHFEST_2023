@@ -404,7 +404,7 @@
           #myUL li button {
             border: 1px solid #ddd;
             margin-top: -1px; /* Prevent double borders */
-            background-color: #f6f6f6;
+            background-color: white;
             padding: 12px;
             text-decoration: none;
             font-size: 18px;
@@ -427,22 +427,22 @@
 
           #section-title mt-5 {
             width: 100px;
-          } 
+          }
           .button {
             background-color: white;
-            color:white;
-          } 
+            color: white;
+          }
         </style>
         <centre>
-        <div class="section-title mt-5">
-          <h2>Search Carpark Availability</h2>
-        </div>
-        <input
-          type="text"
-          id="myInput"
-          onkeyup="myFunction()"
-          placeholder="Search for carparks near you..."
-          title="Type in a Carpark Name"
+          <div class="section-title mt-5">
+            <h2>Search Carpark Availability</h2>
+          </div>
+          <input
+            type="text"
+            id="myInput"
+            onkeyup="myFunction()"
+            placeholder="Search for carparks near you..."
+            title="Type in a Carpark Name"
         /></centre>
 
         <ul id="myUL">
@@ -477,7 +477,8 @@
               type="button"
               id="myButton"
               onclick="clickFunction2()"
-              color="white";
+              color="white"
+              ;
             >
               Hall 16 Carpark
             </button>
@@ -758,7 +759,8 @@
                   data-bs-toggle="collapse"
                   class="collapse"
                   data-bs-target="#accordion-list-1"
-                  >Is this application free of charge? <i class="bx bx-chevron-down icon-show"></i
+                  >Is this application free of charge?
+                  <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
                 <div
@@ -766,7 +768,11 @@
                   class="collapse show"
                   data-bs-parent=".accordion-list"
                 >
-                  <p>Yes. This is an entirely free service, and we aim to keep it free forever. If you wish to, donations are greatly appreciated.</p>
+                  <p>
+                    Yes. This is an entirely free service, and we aim to keep it
+                    free forever. If you wish to, donations are greatly
+                    appreciated.
+                  </p>
                 </div>
               </li>
 
@@ -786,8 +792,9 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    Simply search for the carpark you wish to go to, or click on any of the recommended nearby carparks shown above. The availability and a live feed of
-                    the carpark will be shown.
+                    Simply search for the carpark you wish to go to, or click on
+                    any of the recommended nearby carparks shown above. The
+                    availability and a live feed of the carpark will be shown.
                   </p>
                 </div>
               </li>
@@ -808,10 +815,11 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    This is a relatively new service, therefore not all carparks are included
-                    in our service. As new cameras are required to be installed for this service to work, 
-                    we are working with HDB and URA in incorporating more carparks under our service. We apologise
-                    for any inconvenience caused.
+                    This is a relatively new service, therefore not all carparks
+                    are included in our service. As new cameras are required to
+                    be installed for this service to work, we are working with
+                    HDB and URA in incorporating more carparks under our
+                    service. We apologise for any inconvenience caused.
                   </p>
                 </div>
               </li>
@@ -822,7 +830,9 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-list-4"
                   class="collapsed"
-                  >The carpark I chose showed that it has availability, but it was full when I went in. <i class="bx bx-chevron-down icon-show"></i
+                  >The carpark I chose showed that it has availability, but it
+                  was full when I went in.
+                  <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
                 <div
@@ -831,8 +841,10 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    Carparks modify their lots now and then. We urge you to submit feedback to us if you find that some lots in the carpark 
-                    has been closed, yet shown as available in our application.
+                    Carparks modify their lots now and then. We urge you to
+                    submit feedback to us if you find that some lots in the
+                    carpark has been closed, yet shown as available in our
+                    application.
                   </p>
                 </div>
               </li>
