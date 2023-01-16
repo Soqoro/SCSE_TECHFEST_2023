@@ -25,7 +25,7 @@ for pos in posList:
     print(pos)
  
 while True:
-    img = cv2.imread("./images/ParkingLotsImg.png")
+    img = cv2.imread('./images/ParkingLotsImg.png')
     for pos in posList:
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), (255, 0, 255), 2)
     
