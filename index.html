@@ -363,72 +363,111 @@
             &q=NTU+Carpark+A">
         </iframe>
         </center>
-        <center>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for carparks near you...">
-        <!-- <ul id="myUL">
-          <li><button id = "myButton" onclick="clickFunction()">North Spine Carpark</button></li>
-          <li><button id = "myButton" onclick="clickFunction()">Hall 16 Carpark</button></li>
-          <li><button id = "myButton" onclick="clickFunction()">South Spine Carpark</button></li>
-          <li><button id = "myButton" onclick="clickFunction()">Hall 3 Carpark</button></li>
-          <li><button id = "myButton" onclick="clickFunction()">Hall 12 Carpark</button></li>
-          <li><button id = "myButton" onclick="clickFunction()">Hall 2 Carpark</button></li>
-          <li><a href="#">Hall 16 Carpark</a></li>
-          <li><a href="#">South Spine Carpark</a></li>
-          <li><a href="#">Hall 3 Carpark</a></li>
-          <li><a href="#">Hall 12 Carpark</a></li>
-          <li><a href="#">Tamarind Carpark</a></li>
-          <li><a href="#">Hall 2 Carpark</a></li>
-        </ul> -->
+        
+        
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+          }
+          
+          #myUL {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+          }
+          #myUL li button {
+            border: 1px solid #ddd;
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+          }
+          #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px; /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
+          }
+          #myUL li button:hover:not(.header) {
+            background-color: #eee;
+          }
+          </style>
 
-        <div class="d-grid gap-2">
-          <button class="btn btn-primary col-9 mt-3 mx-auto"  type="button"id = "myButton" onclick="clickFunction()">North Spine Carpark</button>
-            <!-- Video Feed -->
-            <center>
-              <video width="900" height="550" id = "myFeed" class = "collapse" muted autoplay loop style="display: none;">
-                <source src="videos/Newest vid.mov" type="video/mp4">
-              </video>  
-            </center>
-          <button class="btn btn-primary col-9 mx-auto"  type="button"id = "myButton" onclick="clickFunction2()">Hall 16 Carpark</button>
-                      <!-- Video Feed -->
-                      <center>
-                        <video width="900" height="550" id = "myFeed2" class = "collapse" muted autoplay loop style="display: none;">
-                          <source src="videos/Newest vid.mov" type="video/mp4">
-                        </video>  
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for carparks near you..." title="Type in a Carpark Name">
 
-                      </center>
-          <button class="btn btn-primary col-9 mx-auto"  type="button"id = "myButton" onclick="clickFunction3()">South Spine Carpark</button>
-                      <!-- Video Feed -->
-                      <center>
-                        <video width="900" height="550" id = "myFeed3" class = "collapse" muted autoplay loop style="display: none;">
-                          <source src="videos/Newest vid.mov" type="video/mp4">
-                        </video>  
-                      </center>
-          <button class="btn btn-primary col-9 mx-auto"  type="button"id = "myButton" onclick="clickFunction4()">Hall 3 Carpark</button>
-                      <!-- Video Feed -->
-                      <center>
-                        <video width="900" height="550" id = "myFeed4" class = "collapse" muted autoplay loop style="display: none;">
-                          <source src="videos/Newest vid.mov" type="video/mp4">
-                        </video>  
-                      </center>
-          <button class="btn btn-primary col-9 mx-auto"  type="button"id = "myButton" onclick="clickFunction5()">Hall 12 Carpark</button>
-                      <!-- Video Feed -->
-                      <center>
-                        <video width="900" height="550" id = "myFeed5" class = "collapse" muted autoplay loop style="display: none;">
-                          <source src="videos/Newest vid.mov" type="video/mp4">
-                        </video>  
-                      </center>
-          <button class="btn btn-primary col-9 mx-auto mb-0"  type="button" id = "myButton" onclick="clickFunction6()">Hall 2 Carpark</button>
-                      <!-- Video Feed -->
-                      <center>
-                        <video width="900" height="550" id = "myFeed6" class = "collapse" muted autoplay loop style="display: none;">
-                          <source src="videos/Newest vid.mov" type="video/mp4">
-                        </video>  
-                      </center>
-        </div>
-        </center>
+<ul id="myUL">
+  <li><button class="btn btn-primary col-9 mx-auto mb-2 "  type="button"id = "myButton" onclick="clickFunction()">North Spine Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
+  <li><button class="btn btn-primary col-9 mx-auto mb-2"  type="button"id = "myButton" onclick="clickFunction2()">Hall 16 Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed2" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
 
-        <script>
-          function clickFunction() {
+  <li><button class="btn btn-primary col-9 mx-auto mb-2"  type="button"id = "myButton" onclick="clickFunction3()">South Spine Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed3" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
+  <li><button class="btn btn-primary col-9 mx-auto mb-2"  type="button"id = "myButton" onclick="clickFunction4()">Hall 3 Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed4" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
+
+  <li><button class="btn btn-primary col-9 mx-auto mb-2"  type="button"id = "myButton" onclick="clickFunction5()">Hall 12 Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed5" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
+  <li><button class="btn btn-primary col-9 mx-auto mb-2"  type="button"id = "myButton" onclick="clickFunction6()">Hall 2 Carpark</button>
+    <!-- Video Feed -->
+    <center>
+      <video width="900" height="550" id = "myFeed6" class = "collapse" muted autoplay loop style="display: none;">
+        <source src="videos/Newest vid.mov" type="video/mp4">
+      </video>  
+    </center>
+  </li>
+</ul>
+
+<script>
+            function clickFunction() {
             var x = document.getElementById("myFeed");
             if (x.style.display === "none") {
               x.style.display = "block";
@@ -476,71 +515,24 @@
               x.style.display = "none";
             }
           }
-        // function myFunction() {
-        //     var input, filter, ul, li, a, i, txtValue;
-        //     input = document.getElementById("myInput");
-        //     filter = input.value.toUpperCase();
-        //     ul = document.getElementById("myUL");
-        //     li = ul.getElementsByTagName("li");
-        //     for (i = 0; i < li.length; i++) {
-        //         a = li[i].getElementsByTagName("a")[0];
-        //         txtValue = a.textContent || a.innerText;
-        //         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        //             li[i].style.display = "";
-        //         } else {
-        //             li[i].style.display = "none";
-        //         }
-        //     }
-        // }
-        </script>
-
-        <!-- <!DOCTYPE html>
-        <html>
-        <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <style>
-        /* * {
-          box-sizing: border-box;
-        } */
-
-        #myInput {
-          font-family: "Open Sans", sans-serif;
-          background-image: url('/css/searchicon.png');
-          background-position: 10px 12px;
-          background-repeat: no-repeat;
-          width: 100%;
-          font-size: 16px;
-          padding: 12px 20px 12px 40px;
-          border: 1px solid #ddd;
-          margin-bottom: 12px;
-        }
-      </style>
-              <!-- #myUL {
-                font-family: "Open Sans", sans-serif;
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-              } -->
-        <!-- #myUL li a {
-          font-family: "Open Sans", sans-serif;
-          color:#979aa1;
-          border: 1px solid #ddd;
-          margin-top: -1px; /* Prevent double borders */
-          background-color: #f6f6f6;
-          padding: 10px;
-          text-decoration: none;
-          font-size: 16px;
-          color: black;
-          display: block
-        }
-
-        #myUL li a:hover:not(.header) {
-          background-color: #eee;
-        }
-        </style>
-        </head>
-        <body> -->
-
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("button")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+       
       <!-- End Gallery Section -->
 
       <!-- ======= Dashboard Section ======= -->
