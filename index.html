@@ -413,8 +413,16 @@
           #myUL li button:hover:not(.header) {
             background-color: #eee;
           }
-        </style>
 
+          #section-title mt-5 {
+            width: 100px;
+          } 
+          .button {
+            background-color: white;
+            color:white;
+          } 
+        </style>
+        <centre>
         <div class="section-title mt-5">
           <h2>Search Carpark Availability</h2>
         </div>
@@ -424,7 +432,7 @@
           onkeyup="myFunction()"
           placeholder="Search for carparks near you..."
           title="Type in a Carpark Name"
-        />
+        /></centre>
 
         <ul id="myUL">
           <li>
@@ -458,6 +466,7 @@
               type="button"
               id="myButton"
               onclick="clickFunction2()"
+              color="white";
             >
               Hall 16 Carpark
             </button>
