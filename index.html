@@ -349,6 +349,7 @@
           </div>
         </div>
         
+        <center>
         <iframe
           width="600"
           height="450"
@@ -359,34 +360,93 @@
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVVdJWO9XNX4u2o8XAfINnLmjKUaUwFYU
             &q=NTU+North+Spine+Plaza">
         </iframe>
+        </center>
 
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-            <a href="#about">About</a>
-            <a href="#base">Base</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-            <a href="#custom">Custom</a>
-            <a href="#support">Support</a>
-            <a href="#tools">Tools</a>
-          </div>
-        </div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for carpark..">
 
-        <label for="cars">Choose a car:</label>
+        <ul id="myUL">
+          <li><a href="#">North Spine Carpark</a></li>
+          <li><a href="#">Hall 16 Carpark</a></li>
+          <li><a href="#">South Spine Carpark</a></li>
+          <li><a href="#">Bob</a></li>
+          <li><a href="#">Calvin</a></li>
+          <li><a href="#">Christina</a></li>
+          <li><a href="#">Cindy</a></li>
+        </ul>
 
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
 
-        <video width="700" height="700" muted autoplay loop>
+        #myInput {
+          background-image: url('/css/searchicon.png');
+          background-position: 10px 12px;
+          background-repeat: no-repeat;
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+        }
+
+        #myUL {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+          display: block
+        }
+
+        #myUL li a:hover:not(.header) {
+          background-color: #eee;
+        }
+        </style>
+        </head>
+        <body>
+
+        <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+
+        </body>
+        </html>
+    
+        <!-- Video Feed -->
+      <center>
+        <video width="900" height="550" muted autoplay loop>
           <source src="videos/Newest vid.mov" type="video/mp4">
-      </video>  
-      </section>
+        </video>  
+        </section>
+      </center>
       <!-- End Gallery Section -->
 
       <!-- ======= Dashboard Section ======= -->
