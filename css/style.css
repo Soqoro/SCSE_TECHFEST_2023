@@ -7,13 +7,13 @@ body, html{
 
 @font-face {
     font-family: "Norse-Bold";
-    src: url(fonts/Norse-Bold.otf);
+    src: url(../fonts/Norse-Bold.otf);
 }
 
 #picture {
     height: 100%;
     width: 40%;
-    background-image: url("images/bg.jpeg");
+    background-image: url("../images/bg.jpeg");
 
     /* Center and scale the image nicely */
     background-position: center;
