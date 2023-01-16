@@ -23,9 +23,10 @@ Through observing the live feed, users are able to report problems for the speci
 
 ## :keyboard: Specifications
 ### 1. Computer Vision (CV)
-Usage of CV to detect empty parking lots in car parks. This image will also be shown on the website as a live feed for users to monitor.
+Usage of Python open source CV librariesto detect empty parking lots in car parks. This image will also be shown on the website as a live feed for users to monitor.
+
 ### 2. Front-end web development
-HTML, BootStrap, CSS, JavaScript to build the web app and display all car parks around
+HTML, BootStrap, CSS, JavaScript to build the web app and display all car parks around the area.
 
 ## 💡 Limitations
 ### 1. Night model
