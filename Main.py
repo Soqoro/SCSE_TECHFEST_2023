@@ -25,11 +25,11 @@ def checkParkingSpace(imgPro):
  
         #detection criteria of empty lots, 200 pixels
         if count < 200:
-            color = (0, 255, 0)
+            color = (80, 230, 0)
             thickness = 1
             emptySpace += 1
         else:
-            color = (0, 0, 255)
+            color = (0, 0, 230)
             thickness = 1
  
         #create lot detection boxes
@@ -48,8 +48,8 @@ while True:
     if feed.get(cv2.CAP_PROP_POS_FRAMES) == feed.get(cv2.CAP_PROP_FRAME_COUNT):
         feed.set(cv2.CAP_PROP_POS_FRAMES, 0)
     success, img = feed.read()
-    imgBlur = cv2.GaussianBlur(imgGray, (3, 3), 1)
     imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    imgBlur = cv2.GaussianBlur(imgGray, (3, 3), 1)
     imgThreshold = cv2.adaptiveThreshold(imgBlur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
                                          cv2.THRESH_BINARY_INV, 25, 16)
     kernel = np.ones((3, 3), np.uint8)
