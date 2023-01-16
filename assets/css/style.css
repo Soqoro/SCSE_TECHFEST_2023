@@ -621,6 +621,7 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
+  background-color: aliceblue;
   overflow: hidden;
 }
 
@@ -650,6 +651,9 @@ section {
 }
 
 @media (min-width: 992px) {
+  .gallery{
+    background-color: aliceblue;
+  }
   .gallery .swiper-wrapper {
     padding: 40px 0;
   }
@@ -748,6 +752,7 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+
 .pricing .row {
   padding-top: 40px;
 }
