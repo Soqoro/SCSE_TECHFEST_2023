@@ -4,12 +4,12 @@ import cvzone
 import numpy as np
  
 # Video feed
-feed = cv2.VideoCapture('./videos/CPLatestVid.mp4')
+feed = cv2.VideoCapture('./videos/cropped.mp4')
 
 #setting size of the boxes 
-width, height = 40,17
+width, height = 120,60
  
-with open('CarParkPos', 'rb') as f:
+with open('CarParkPos2', 'rb') as f:
     posList = pickle.load(f)
 
 
@@ -24,7 +24,7 @@ def checkParkingSpace(imgPro):
         count = cv2.countNonZero(imgCrop)
  
         #detection criteria of empty lots, 200 pixels
-        if count < 200:
+        if count < 900:
             color = (80, 230, 0)
             thickness = 1
             emptySpace += 1
