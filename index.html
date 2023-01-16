@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-Up Form</title>
+    <!--https://unsplash.com/photos/8tZ7vS-ceDc -Credit this for background later-->
+</head>
+<body>
+    <div id="picture">
+        <div class="logo">
+            <h1>SimpliPark</h1>
+        </div>
+    </div>
+    <div id="right">
+        <div id="message">
+            <p>Finding a parking slot should never be harder than learning how to park.</p>
+            <p>Sign up now. You know you want to.</p>
+        </div>
+        <form action="" method="post">
+            <div class="mainform">
+                <p id="formtitle">Let's Do This!</p>
+                <div class="input">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="user_firstname" id="firstname" required>
+                </div>
+                <div class="input">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="user_lastname" id="lastname" required>
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="user_email" id="email" required>
+                </div>
+                <div class="input">
+                    <label for="phonenum">PHONE NUMBER</label>
+                    <input type="text" name="user_phonenum" id="phonenum" required>
+                </div>
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="user_pass" id="password" minlength="8" required>
+                </div>
+                <div class="input">
+                    <label for="confirmed_password">CONFIRM PASSWORD</label>
+                    <input type="password" name="user_confirmedpass" id="confirmed_password" minlength="8" required>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p style="padding-left: 5%; font-size: medium; font-weight:600;">Already have an account? <a href="main.html">Log in</p>
+    </div>
+</body>
+</html>

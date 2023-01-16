@@ -1,0 +1,98 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+#picture {
+    height: 100%;
+    width: 40%;
+    background-image: url("images/bg.jpeg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#right p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#message {
+    padding: 5%;
+    padding-top: 10%;
+}
+
+
+.mainform {
+    padding-left: 5%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#formtitle{
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 1%;
+    font-size: small;
+}
+
+input {
+    width: 60%;
+    border: 2px solid #000;
+}
+
+#right {
+    background-color: #E5E7EB;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    top: 16%;
+    position: relative;
+    background-color: rgba(255,255,255, 0.2);
+    font-family: 'Norse-Bold'; 
+    font-size: 100px;
+    color:azure;
+}
+
+button {
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    color: hotpink;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+#password:valid, #confirmed_password:valid {
+    border-color: green;
+}
+
+#password:invalid, #confirmed_password:invalid {
+    border-color: red;
+}
