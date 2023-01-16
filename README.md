@@ -1,6 +1,6 @@
-# SimpliPark :family_man_woman_boy_boy:
+# :parking: SimpliPark 
 
-## Team 51
+## :family_man_woman_boy_boy: Team 51 
 Team Member Names:
 1. Sua Qi Rong
 2. Tan Yue Yang Kane
