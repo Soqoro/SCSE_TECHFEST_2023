@@ -2,11 +2,11 @@ import cv2
 import pickle
 
 #width and height of the carpark detection boxes 
-width, height = 40, 17
+width, height = 88,43
 
 # 
 try:
-    with open('CarParkPos', 'rb') as f:
+    with open('CarParkPos2', 'rb') as f:
         posList = pickle.load(f)
 except:
     posList = []
@@ -25,14 +25,14 @@ def mouseClick(events, x, y, flags, params):
                 posList.pop(i)
     
     #open binary storage
-    with open('CarParkPos', 'wb') as f:
+    with open('CarParkPos2', 'wb') as f:
         pickle.dump(posList, f)
 for pos in posList:
     print(pos)
 
 #run main programme to allow creating or deleting detection boxes
 while True:
-    img = cv2.imread('./images/My project.png')
+    img = cv2.imread('./images/parkinglot2.png')
     for pos in posList:
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), (255, 0, 255), 2)
     cv2.imshow("Image", img)
