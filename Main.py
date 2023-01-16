@@ -9,7 +9,7 @@ feed = cv2.VideoCapture('./videos/CPLatestVid.mp4')
 #setting size of the boxes 
 width, height = 40,17
  
-with open('CarParkPos2', 'rb') as f:
+with open('CarParkPos', 'rb') as f:
     posList = pickle.load(f)
 
 

@@ -6,7 +6,7 @@ width, height = 40, 17
 
 # 
 try:
-    with open('CarParkPos2', 'rb') as f:
+    with open('CarParkPos', 'rb') as f:
         posList = pickle.load(f)
 except:
     posList = []
@@ -25,7 +25,7 @@ def mouseClick(events, x, y, flags, params):
                 posList.pop(i)
     
     #open binary storage
-    with open('CarParkPos2', 'wb') as f:
+    with open('CarParkPos', 'wb') as f:
         pickle.dump(posList, f)
 for pos in posList:
     print(pos)
