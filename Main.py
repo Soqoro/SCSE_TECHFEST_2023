@@ -4,14 +4,15 @@ import cvzone
 import numpy as np
  
 # Video feed
-cap = cv2.VideoCapture('carPark.mp4')
+cap = cv2.VideoCapture('./videos/video_preview_h264.mp4')
  
 with open('CarParkPos', 'rb') as f:
     posList = pickle.load(f)
  
-width, height = 107, 48
- 
- 
+width, height = 120,55
+for pos in posList:
+    print(pos) 
+print(len(posList)) 
 def checkParkingSpace(imgPro):
     spaceCounter = 0
  
