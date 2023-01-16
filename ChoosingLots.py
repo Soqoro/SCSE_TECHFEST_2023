@@ -1,10 +1,10 @@
 import cv2
 import pickle
  
-width, height = 120, 55
+width, height = 40, 17
  
 try:
-    with open('CarParkPos', 'rb') as f:
+    with open('CarParkPos2', 'rb') as f:
         posList = pickle.load(f)
 except:
     posList = []
@@ -19,13 +19,13 @@ def mouseClick(events, x, y, flags, params):
             if x1 < x < x1 + width and y1 < y < y1 + height:
                 posList.pop(i)
  
-    with open('CarParkPos', 'wb') as f:
+    with open('CarParkPos2', 'wb') as f:
         pickle.dump(posList, f)
 for pos in posList:
     print(pos)
  
 while True:
-    img = cv2.imread('./images/ParkingLotsImg.png')
+    img = cv2.imread('./images/My project.png')
     for pos in posList:
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), (255, 0, 255), 2)
     

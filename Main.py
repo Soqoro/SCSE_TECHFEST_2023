@@ -6,13 +6,11 @@ import numpy as np
 # Video feed
 cap = cv2.VideoCapture('./videos/CPLatestVid.mp4')
  
-with open('CarParkPos', 'rb') as f:
+with open('CarParkPos2', 'rb') as f:
     posList = pickle.load(f)
  
-width, height = 120,55
-for pos in posList:
-    print(pos) 
-print(len(posList)) 
+width, height = 40,17
+
 def checkParkingSpace(imgPro):
     spaceCounter = 0
  
@@ -24,20 +22,20 @@ def checkParkingSpace(imgPro):
         count = cv2.countNonZero(imgCrop)
  
  
-        if count < 900:
+        if count < 200:
             color = (0, 255, 0)
-            thickness = 5
+            thickness = 1
             spaceCounter += 1
         else:
             color = (0, 0, 255)
-            thickness = 2
+            thickness = 1
  
         cv2.rectangle(img, pos, (pos[0] + width, pos[1] + height), color, thickness)
-        cvzone.putTextRect(img, str(count), (x, y + height - 3), scale=1,
-                           thickness=2, offset=0, colorR=color)
+        cvzone.putTextRect(img, str(count), (x, y + height - 3), scale=0.6,
+                           thickness=1, offset=0, colorR=color)
  
-    cvzone.putTextRect(img, f'Free: {spaceCounter}/{len(posList)}', (100, 50), scale=3,
-                           thickness=5, offset=20, colorR=(0,200,0))
+    cvzone.putTextRect(img, f'Free: {spaceCounter}/{len(posList)}', (150, 50), scale=2,
+                           thickness=3, offset=20, colorR=(0,200,0))
 while True:
  
     if cap.get(cv2.CAP_PROP_POS_FRAMES) == cap.get(cv2.CAP_PROP_FRAME_COUNT):
@@ -53,6 +51,6 @@ while True:
  
     checkParkingSpace(imgDilate)
     cv2.imshow("Image", img)
-    # cv2.imshow("ImageBlur", imgBlur)
-    # cv2.imshow("ImageThres", imgMedian)
+    #cv2.imshow("ImageBlur", imgBlur)
+    #cv2.imshow("ImageThres", imgMedian)
     cv2.waitKey(10)
