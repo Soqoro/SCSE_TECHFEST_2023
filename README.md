@@ -14,10 +14,10 @@ Our team aims to develop a web application (Simplipark) targeted towards the gen
 HDB manages over 2000 car parks, with more than 660k car parks and 7000 equipment that supports the operations of the car park. Our car parks are visited by 500k unique motorists and the system processes 2.5m transactions daily. It is not possible for HDB to deploy staff/maintenance teams to every car park, due to the sheer number of car parks and equipment. Also, the situation is exacerbated by the manpower crunch brought about by our aging population. 
 For drivers, they face many problems finding empty parking spaces with drivers needing to drive around aimlessly in hopes of finding a carpark with empty lots.
 
-## Inspiration
+## 🚀 Inspiration
 We found that there is an underlying problem where individuals always have difficulty of finding an empty parking lot and we would like to save the amount of time that individuals spend looking for one.
 
-## Solution
+## 🚶 Solution
 Therefore, our group seeks to allow the residents to rely on SimpliPark to more easily find car parks with empty lots. Additionally, residents are also allowed to take ownership of their estate’s well-being by allowing them to report any problems within their neighborhood swiftly and easily with the click of a button.
 
 
@@ -42,13 +42,13 @@ The program written for the computer vision algorithm is calibrated for day time
 ### 2. Multi-storeyed structure of HDB car parks
 Our prototype is created using an overhead view of open-air car parks, where one image is able to capture hundreds of parking lots. In HDB carparks where they are usually multi-storeyed, it will be difficult to capture many parking lots in one image. Therefore, many cameras would be required, increasing cost. Furthermore, allocating parking slots to the computer vision algorithm will be harder as the slots will not be as clearly defined as those seen through a bird’s eye view.
 
-## Future Plans
+## 🗣️ Future Plans
 ### 1. Mobile Version (SimpliPark Mobile)
 We intend to build SimpliPark Mobile that leverages on our web application for ease of use by drivers on the road. 
 ### 2. Reward System
 In order to further encourage residents to utilize SimpliPark, we plan to collaborate with HDB and other companies to leverage a reward system that will incentivise users to use the app and actively take part in the community. Rewards can include free parking vouchers after clocking a certain number of hours with the app or reporting a certain number of damages.
 
-## New Technology Learnt
+## 📚 New Technology Learnt
 We picked up some useful technology that are not usually taught in school yet at our Year 2 Level such as image processing and Computer Vision techniques through youtube tutorials and also CSS frameworks such as Bootstrap to design websites and make our frontend more beautiful.
 
 # 🧑🏽‍🤝‍🧑🏽 Contributors
