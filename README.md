@@ -28,6 +28,8 @@ SimpliPark allows users to choose their desired car park, or to detect the car p
 Through observing the live feed, users are able to report problems for the specific selected car parks. This can facilitate timely maintenance of car parks without requiring heavy deployment of staff/maintenance teams, encouraging residents to take ownership of their estate’s well-being.
 ### 3. Leaderboard
 Leaderboard is created to exalt local heroes in our community who actively report damages rather than let it go unnoticed. This will serve to encourage other users to report damages such as broken gantry or damaged camera and whatnot.
+### 4. Responsive Design
+Our website was also designed with the intention to be responsive for mobile users as most drivers are using their phones.
 
 ## :keyboard: Specifications
 ### 1. Computer Vision (CV)
@@ -49,7 +51,7 @@ We intend to build SimpliPark Mobile that leverages on our web application for e
 In order to further encourage residents to utilize SimpliPark, we plan to collaborate with HDB and other companies to leverage a reward system that will incentivise users to use the app and actively take part in the community. Rewards can include free parking vouchers after clocking a certain number of hours with the app or reporting a certain number of damages.
 
 ## 📚 New Technology Learnt
-We picked up some useful technology that are not usually taught in school yet at our Year 2 Level such as image processing and Computer Vision techniques through youtube tutorials and also CSS frameworks such as Bootstrap to design websites and make our frontend more beautiful.
+We picked up some useful technology that are not usually taught in school yet at our Year 2 Level such as image processing and Computer Vision techniques through youtube tutorials and also CSS frameworks such as Bootstrap to design websites and make our frontend more beautiful. Additionally, our website was also designed with the intention to be responsive for mobile users as most drivers are using their phones. Hence, we also picked up responsive web design skills through this hackathon.
 
 # 🧑🏽‍🤝‍🧑🏽 Contributors
 * [Chong Wei Kang](https://github.com/weikangg)
