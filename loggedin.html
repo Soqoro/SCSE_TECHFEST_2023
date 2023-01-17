@@ -37,12 +37,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+
 
     <!-- =======================================================
   * Template Name: Appland - v4.10.0
@@ -72,7 +67,7 @@
               <a class="nav-link scrollto" href="#gallery">Carparks Near You</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="#Dashboard">Dashboard</a>
+              <a class="nav-link scrollto" href="#Dashboard">Leaderboard</a>
             </li>
             <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -138,7 +133,7 @@
               >
                 <div class="row">
                   <div class="col-md-6 icon-box" data-aos="fade-up">
-                    <i class="bx bx-receipt"></i>
+                    <i class="bx bx-car"></i>
                     <h4>Find Available parking near you</h4>
                     <p>
                       We make use of Computer Vision to detect available parking
@@ -150,7 +145,7 @@
                     data-aos="fade-up"
                     data-aos-delay="100"
                   >
-                    <i class="bx bx-cube-alt"></i>
+                    <i class="bx bx-station"></i>
                     <h4>Carpark Status</h4>
                     <p>
                       Check for working statuses of carparks near you and not
@@ -162,7 +157,7 @@
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
-                    <i class="bx bx-images"></i>
+                    <i class="bx bx-user-check"></i>
                     <h4>Report problems</h4>
                     <p>Become a local hero by reporting carpark faults</p>
                   </div>
@@ -171,11 +166,11 @@
                     data-aos="fade-up"
                     data-aos-delay="300"
                   >
-                    <i class="bx bx-images"></i>
-                    <h4>Dashboard</h4>
+                    <i class="bx bx-trophy"></i>
+                    <h4>Leaderboard</h4>
                     <p>
-                      View overall reports of each carpark on our all
-                      encompassing Dashboard
+                      View the top local heroes that made the most reports,
+                      improving your neighbourhood!
                     </p>
                   </div>
                   <div
@@ -386,6 +381,7 @@
             padding: 12px 20px 12px 40px;
             border: 1px solid #ddd;
             margin-bottom: 12px;
+
           }
 
           #myUL {
@@ -396,7 +392,7 @@
           #myUL li button {
             border: 1px solid #ddd;
             margin-top: -1px; /* Prevent double borders */
-            background-color: #f6f6f6;
+            background-color: white;
             padding: 12px;
             text-decoration: none;
             font-size: 18px;
@@ -416,8 +412,16 @@
           #myUL li button:hover:not(.header) {
             background-color: #eee;
           }
-        </style>
 
+          #section-title mt-5 {
+            width: 100px;
+          } 
+          .button {
+            background-color: white;
+            color:white;
+          } 
+        </style>
+        <centre>
         <div class="section-title mt-5">
           <h2>Search Carpark Availability</h2>
         </div>
@@ -427,7 +431,7 @@
           onkeyup="myFunction()"
           placeholder="Search for carparks near you..."
           title="Type in a Carpark Name"
-        />
+        /></centre>
 
         <ul id="myUL">
           <li>
@@ -436,22 +440,23 @@
               type="button"
               id="myButton"
               onclick="clickFunction()"
+              color = "white"
             >
               North Spine Carpark
             </button>
             <!-- Video Feed -->
             <center>
               <video
-                width="900"
-                height="550"
+                width="800"
+                height="450"
                 id="myFeed"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
                 style="display: none"
               >
-                <source src="videos/Newest vid.mov" type="video/mp4" />
+                <source src="videos/Video2.mp4" type="video/mp4" />
               </video>
             </center>
           </li>
@@ -461,6 +466,7 @@
               type="button"
               id="myButton"
               onclick="clickFunction2()"
+              color="white";
             >
               Hall 16 Carpark
             </button>
@@ -470,13 +476,13 @@
                 width="900"
                 height="550"
                 id="myFeed2"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
                 style="display: none"
               >
-                <source src="videos/Newest vid.mov" type="video/mp4" />
+                <source src="videos/Video1.mp4" type="video/mp4" />
               </video>
             </center>
           </li>
@@ -496,7 +502,7 @@
                 width="900"
                 height="550"
                 id="myFeed3"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
@@ -521,7 +527,7 @@
                 width="900"
                 height="550"
                 id="myFeed4"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
@@ -547,7 +553,7 @@
                 width="900"
                 height="550"
                 id="myFeed5"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
@@ -572,7 +578,7 @@
                 width="900"
                 height="550"
                 id="myFeed6"
-                class="collapse"
+                class="collapse w-100"
                 muted
                 autoplay
                 loop
@@ -741,7 +747,7 @@
                   data-bs-toggle="collapse"
                   class="collapse"
                   data-bs-target="#accordion-list-1"
-                  >What is 1+1? <i class="bx bx-chevron-down icon-show"></i
+                  >Is this application free of charge? <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
                 <div
@@ -749,7 +755,7 @@
                   class="collapse show"
                   data-bs-parent=".accordion-list"
                 >
-                  <p>It is 2</p>
+                  <p>Yes. This is an entirely free service, and we aim to keep it free forever. If you wish to, donations are greatly appreciated.</p>
                 </div>
               </li>
 
@@ -759,7 +765,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-list-2"
                   class="collapsed"
-                  >How do I use the app
+                  >How do I use this application?
                   <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
@@ -769,7 +775,8 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    Look at carparks near you and choose one with available lots
+                    Simply search for the carpark you wish to go to, or click on any of the recommended nearby carparks shown above. The availability and a live feed of
+                    the carpark will be shown.
                   </p>
                 </div>
               </li>
@@ -780,7 +787,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-list-3"
                   class="collapsed"
-                  >Dolor sit amet consectetur adipiscing elit?
+                  >I can't seem to find the carpark that I want to go to.
                   <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
@@ -790,12 +797,10 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                    sagittis orci. Faucibus pulvinar elementum integer enim. Sem
-                    nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
-                    pellentesque eu tincidunt. Lectus urna duis convallis
-                    convallis tellus. Urna molestie at elementum eu facilisis
-                    sed odio morbi quis
+                    This is a relatively new service, therefore not all carparks are included
+                    in our service. As new cameras are required to be installed for this service to work, 
+                    we are working with HDB and URA in incorporating more carparks under our service. We apologise
+                    for any inconvenience caused.
                   </p>
                 </div>
               </li>
@@ -806,8 +811,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#accordion-list-4"
                   class="collapsed"
-                  >Tempus quam pellentesque nec nam aliquam sem et tortor
-                  consequat? <i class="bx bx-chevron-down icon-show"></i
+                  >The carpark I chose showed that it has availability, but it was full when I went in. <i class="bx bx-chevron-down icon-show"></i
                   ><i class="bx bx-chevron-up icon-close"></i
                 ></a>
                 <div
@@ -816,36 +820,8 @@
                   data-bs-parent=".accordion-list"
                 >
                   <p>
-                    Molestie a iaculis at erat pellentesque adipiscing commodo.
-                    Dignissim suspendisse in est ante in. Nunc vel risus commodo
-                    viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
-                    bibendum est. Purus gravida quis blandit turpis cursus in.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i>
-                <a
-                  data-bs-toggle="collapse"
-                  data-bs-target="#accordion-list-5"
-                  class="collapsed"
-                  >Tortor vitae purus faucibus ornare. Varius vel pharetra vel
-                  turpis nunc eget lorem dolor?
-                  <i class="bx bx-chevron-down icon-show"></i
-                  ><i class="bx bx-chevron-up icon-close"></i
-                ></a>
-                <div
-                  id="accordion-list-5"
-                  class="collapse"
-                  data-bs-parent=".accordion-list"
-                >
-                  <p>
-                    Laoreet sit amet cursus sit amet dictum sit amet justo.
-                    Mauris vitae ultricies leo integer malesuada nunc vel.
-                    Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate
-                    eu scelerisque.
+                    Carparks modify their lots now and then. We urge you to submit feedback to us if you find that some lots in the carpark 
+                    has been closed, yet shown as available in our application.
                   </p>
                 </div>
               </li>
@@ -1091,10 +1067,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+   
   </body>
 </html>
